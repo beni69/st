@@ -68,7 +68,7 @@
 /* This patch adds custom rendering of lines/blocks/braille characters for gapless alignment.
  * https://st.suckless.org/patches/boxdraw/
  */
-#define BOXDRAW_PATCH 0
+#define BOXDRAW_PATCH 1
 
 /* By default st only sets PRIMARY on selection.
  * This patch makes st set CLIPBOARD on selection.
@@ -141,7 +141,7 @@
 /* This patch makes the cursor color the inverse of the current cell color.
  * https://st.suckless.org/patches/dynamic-cursor-color/
  */
-#define DYNAMIC_CURSOR_COLOR_PATCH 0
+#define DYNAMIC_CURSOR_COLOR_PATCH 1
 
 /* Reading and writing st's screen through a pipe, e.g. pass info to dmenu.
  * https://st.suckless.org/patches/externalpipe/
@@ -170,7 +170,7 @@
  * that are available to GUI applications.
  * https://st.suckless.org/patches/fix_keyboard_input/
  */
-#define FIXKEYBOARDINPUT_PATCH 0
+#define FIXKEYBOARDINPUT_PATCH 1
 
 /* This patch allows you to add spare font besides the default. Some glyphs can be not present in
  * the default font. For this glyphs st uses font-config and try to find them in font cache first.
@@ -178,7 +178,7 @@
  * So they will be used first for glyphs that are absent in the default font.
  * https://st.suckless.org/patches/font2/
  */
-#define FONT2_PATCH 1
+#define FONT2_PATCH 0
 
 /* This patch adds the ability to toggle st into fullscreen mode.
  * Two key bindings are defined: F11 which is typical with other applications and Alt+Enter
@@ -191,7 +191,7 @@
  * the terminal window.
  * https://st.suckless.org/patches/hidecursor/
  */
-#define HIDECURSOR_PATCH 0
+#define HIDECURSOR_PATCH 1
 
 /* This patch hides the terminal cursor when the window loses focus (as opposed to showing a hollow
  * cursor).
@@ -242,7 +242,7 @@
  * same CWD (current working directory) as the original st instance.
  * https://st.suckless.org/patches/newterm/
  */
-#define NEWTERM_PATCH 0
+#define NEWTERM_PATCH 1
 
 /* This patch will set the _MOTIF_WM_HINTS property for the st window which, if the window manager
  * respects it, will show the st window without window decorations.
@@ -250,7 +250,7 @@
  * In dwm, if the decoration hints patch is applied, then the st window will start out without a
  * border. In GNOME and KDE the window should start without a window title.
  */
-#define NO_WINDOW_DECORATIONS_PATCH 0
+#define NO_WINDOW_DECORATIONS_PATCH 1
 
 /* Open contents of the clipboard in a user-defined browser.
  * https://st.suckless.org/patches/open_copied_url/
@@ -262,7 +262,7 @@
  *
  * https://www.reddit.com/r/suckless/comments/cc83om/st_open_url/
  */
-#define OPENURLONCLICK_PATCH 0
+#define OPENURLONCLICK_PATCH 1
 
 /* This patch allows you to specify a border that is relative in size to the width of a cell
  * in the terminal.
@@ -285,13 +285,13 @@
  * This variant depends on SCROLLBACK_PATCH being enabled.
  * https://st.suckless.org/patches/scrollback/
  */
-#define SCROLLBACK_MOUSE_PATCH 1
+#define SCROLLBACK_MOUSE_PATCH 0
 
 /* Scroll back through terminal output using mouse wheel (when not in MODE_ALTSCREEN).
  * This variant depends on SCROLLBACK_PATCH being enabled.
  * https://st.suckless.org/patches/scrollback/
  */
-#define SCROLLBACK_MOUSE_ALTSCREEN_PATCH 0
+#define SCROLLBACK_MOUSE_ALTSCREEN_PATCH 1
 
 /* This is the single drawable buffer patch as outlined in the FAQ to get images
  * in w3m to display. While this patch does not break the alpha patch it images
@@ -424,7 +424,7 @@
  * https://github.com/Dreomite/st/commit/e3b821dcb3511d60341dec35ee05a4a0abfef7f2
  * https://www.reddit.com/r/suckless/comments/jt90ai/update_support_for_proper_glyph_rendering_in_st/
  */
-#define WIDE_GLYPHS_PATCH 0
+#define WIDE_GLYPHS_PATCH 1
 
 /* There is a known issue that Google's Variable Fonts (VF) can end up with letter spacing
  * that is too wide in programs that use Xft, for example Inconsolata v3.000.
